@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3B4D18613A751D900DD3860 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B4D18513A751D900DD3860 /* Cocoa.framework */; };
+		F3B4D19013A751D900DD3860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D18E13A751D900DD3860 /* InfoPlist.strings */; };
+		F3B4D19313A751D900DD3860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D19213A751D900DD3860 /* main.m */; };
+		F3B4D19613A751D900DD3860 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D19413A751D900DD3860 /* Credits.rtf */; };
+		F3B4D19913A751D900DD3860 /* MacAndroidSyncAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D19813A751D900DD3860 /* MacAndroidSyncAppDelegate.m */; };
+		F3B4D19C13A751D900DD3860 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D19A13A751D900DD3860 /* MainMenu.xib */; };
+		F3B4D1A313A751D900DD3860 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B4D18513A751D900DD3860 /* Cocoa.framework */; };
+		F3B4D1AB13A751D900DD3860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D1A913A751D900DD3860 /* InfoPlist.strings */; };
+		F3B4D1AE13A751D900DD3860 /* MacAndroidSyncTests.h in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D1AD13A751D900DD3860 /* MacAndroidSyncTests.h */; };
+		F3B4D1B013A751D900DD3860 /* MacAndroidSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D1AF13A751D900DD3860 /* MacAndroidSyncTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3B4D1A413A751D900DD3860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B4D17813A751D900DD3860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B4D18013A751D900DD3860;
+			remoteInfo = MacAndroidSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3B4D18113A751D900DD3860 /* MacAndroidSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAndroidSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B4D18513A751D900DD3860 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F3B4D18813A751D900DD3860 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F3B4D18913A751D900DD3860 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3B4D18A13A751D900DD3860 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3B4D18D13A751D900DD3860 /* MacAndroidSync-Info.plist */ = {isa = PBXFileReference; path = "MacAndroidSync-Info.plist"; sourceTree = "<group>"; };
+		F3B4D18F13A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3B4D19113A751D900DD3860 /* MacAndroidSync-Prefix.pch */ = {isa = PBXFileReference; path = "MacAndroidSync-Prefix.pch"; sourceTree = "<group>"; };
+		F3B4D19213A751D900DD3860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3B4D19513A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F3B4D19713A751D900DD3860 /* MacAndroidSyncAppDelegate.h */ = {isa = PBXFileReference; path = MacAndroidSyncAppDelegate.h; sourceTree = "<group>"; };
+		F3B4D19813A751D900DD3860 /* MacAndroidSyncAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacAndroidSyncAppDelegate.m; sourceTree = "<group>"; };
+		F3B4D19B13A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F3B4D1A213A751D900DD3860 /* MacAndroidSyncTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAndroidSyncTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B4D1A813A751D900DD3860 /* MacAndroidSyncTests-Info.plist */ = {isa = PBXFileReference; path = "MacAndroidSyncTests-Info.plist"; sourceTree = "<group>"; };
+		F3B4D1AA13A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3B4D1AC13A751D900DD3860 /* MacAndroidSyncTests-Prefix.pch */ = {isa = PBXFileReference; path = "MacAndroidSyncTests-Prefix.pch"; sourceTree = "<group>"; };
+		F3B4D1AD13A751D900DD3860 /* MacAndroidSyncTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacAndroidSyncTests.h; sourceTree = "<group>"; };
+		F3B4D1AF13A751D900DD3860 /* MacAndroidSyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacAndroidSyncTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3B4D17E13A751D900DD3860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B4D18613A751D900DD3860 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B4D19E13A751D900DD3860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B4D1A313A751D900DD3860 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3B4D17613A751D900DD3860 = {
+			isa = PBXGroup;
+			children = (
+				F3B4D18B13A751D900DD3860 /* MacAndroidSync */,
+				F3B4D1A613A751D900DD3860 /* MacAndroidSyncTests */,
+				F3B4D18413A751D900DD3860 /* Frameworks */,
+				F3B4D18213A751D900DD3860 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3B4D18213A751D900DD3860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D18113A751D900DD3860 /* MacAndroidSync.app */,
+				F3B4D1A213A751D900DD3860 /* MacAndroidSyncTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B4D18413A751D900DD3860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D18513A751D900DD3860 /* Cocoa.framework */,
+				F3B4D18713A751D900DD3860 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3B4D18713A751D900DD3860 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D18813A751D900DD3860 /* AppKit.framework */,
+				F3B4D18913A751D900DD3860 /* CoreData.framework */,
+				F3B4D18A13A751D900DD3860 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F3B4D18B13A751D900DD3860 /* MacAndroidSync */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D19713A751D900DD3860 /* MacAndroidSyncAppDelegate.h */,
+				F3B4D19813A751D900DD3860 /* MacAndroidSyncAppDelegate.m */,
+				F3B4D19A13A751D900DD3860 /* MainMenu.xib */,
+				F3B4D18C13A751D900DD3860 /* Supporting Files */,
+			);
+			path = MacAndroidSync;
+			sourceTree = "<group>";
+		};
+		F3B4D18C13A751D900DD3860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D18D13A751D900DD3860 /* MacAndroidSync-Info.plist */,
+				F3B4D18E13A751D900DD3860 /* InfoPlist.strings */,
+				F3B4D19113A751D900DD3860 /* MacAndroidSync-Prefix.pch */,
+				F3B4D19213A751D900DD3860 /* main.m */,
+				F3B4D19413A751D900DD3860 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3B4D1A613A751D900DD3860 /* MacAndroidSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D1AD13A751D900DD3860 /* MacAndroidSyncTests.h */,
+				F3B4D1AF13A751D900DD3860 /* MacAndroidSyncTests.m */,
+				F3B4D1A713A751D900DD3860 /* Supporting Files */,
+			);
+			path = MacAndroidSyncTests;
+			sourceTree = "<group>";
+		};
+		F3B4D1A713A751D900DD3860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D1A813A751D900DD3860 /* MacAndroidSyncTests-Info.plist */,
+				F3B4D1A913A751D900DD3860 /* InfoPlist.strings */,
+				F3B4D1AC13A751D900DD3860 /* MacAndroidSyncTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3B4D18013A751D900DD3860 /* MacAndroidSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B4D1B313A751D900DD3860 /* Build configuration list for PBXNativeTarget "MacAndroidSync" */;
+			buildPhases = (
+				F3B4D17D13A751D900DD3860 /* Sources */,
+				F3B4D17E13A751D900DD3860 /* Frameworks */,
+				F3B4D17F13A751D900DD3860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacAndroidSync;
+			productName = MacAndroidSync;
+			productReference = F3B4D18113A751D900DD3860 /* MacAndroidSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3B4D1A113A751D900DD3860 /* MacAndroidSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B4D1B613A751D900DD3860 /* Build configuration list for PBXNativeTarget "MacAndroidSyncTests" */;
+			buildPhases = (
+				F3B4D19D13A751D900DD3860 /* Sources */,
+				F3B4D19E13A751D900DD3860 /* Frameworks */,
+				F3B4D19F13A751D900DD3860 /* Resources */,
+				F3B4D1A013A751D900DD3860 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B4D1A513A751D900DD3860 /* PBXTargetDependency */,
+			);
+			name = MacAndroidSyncTests;
+			productName = MacAndroidSyncTests;
+			productReference = F3B4D1A213A751D900DD3860 /* MacAndroidSyncTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3B4D17813A751D900DD3860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = lainuo.info;
+			};
+			buildConfigurationList = F3B4D17B13A751D900DD3860 /* Build configuration list for PBXProject "MacAndroidSync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3B4D17613A751D900DD3860;
+			productRefGroup = F3B4D18213A751D900DD3860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3B4D18013A751D900DD3860 /* MacAndroidSync */,
+				F3B4D1A113A751D900DD3860 /* MacAndroidSyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3B4D17F13A751D900DD3860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B4D19013A751D900DD3860 /* InfoPlist.strings in Resources */,
+				F3B4D19613A751D900DD3860 /* Credits.rtf in Resources */,
+				F3B4D19C13A751D900DD3860 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B4D19F13A751D900DD3860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B4D1AB13A751D900DD3860 /* InfoPlist.strings in Resources */,
+				F3B4D1AE13A751D900DD3860 /* MacAndroidSyncTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3B4D1A013A751D900DD3860 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B4D17D13A751D900DD3860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B4D19313A751D900DD3860 /* main.m in Sources */,
+				F3B4D19913A751D900DD3860 /* MacAndroidSyncAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B4D19D13A751D900DD3860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B4D1B013A751D900DD3860 /* MacAndroidSyncTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3B4D1A513A751D900DD3860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B4D18013A751D900DD3860 /* MacAndroidSync */;
+			targetProxy = F3B4D1A413A751D900DD3860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3B4D18E13A751D900DD3860 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B4D18F13A751D900DD3860 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3B4D19413A751D900DD3860 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B4D19513A751D900DD3860 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F3B4D19A13A751D900DD3860 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B4D19B13A751D900DD3860 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F3B4D1A913A751D900DD3860 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B4D1AA13A751D900DD3860 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3B4D1B113A751D900DD3860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F3B4D1B213A751D900DD3860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F3B4D1B413A751D900DD3860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacAndroidSync/MacAndroidSync-Prefix.pch";
+				INFOPLIST_FILE = "MacAndroidSync/MacAndroidSync-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3B4D1B513A751D900DD3860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacAndroidSync/MacAndroidSync-Prefix.pch";
+				INFOPLIST_FILE = "MacAndroidSync/MacAndroidSync-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3B4D1B713A751D900DD3860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacAndroidSync.app/Contents/MacOS/MacAndroidSync";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacAndroidSyncTests/MacAndroidSyncTests-Prefix.pch";
+				INFOPLIST_FILE = "MacAndroidSyncTests/MacAndroidSyncTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F3B4D1B813A751D900DD3860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacAndroidSync.app/Contents/MacOS/MacAndroidSync";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacAndroidSyncTests/MacAndroidSyncTests-Prefix.pch";
+				INFOPLIST_FILE = "MacAndroidSyncTests/MacAndroidSyncTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3B4D17B13A751D900DD3860 /* Build configuration list for PBXProject "MacAndroidSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B4D1B113A751D900DD3860 /* Debug */,
+				F3B4D1B213A751D900DD3860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B4D1B313A751D900DD3860 /* Build configuration list for PBXNativeTarget "MacAndroidSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B4D1B413A751D900DD3860 /* Debug */,
+				F3B4D1B513A751D900DD3860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3B4D1B613A751D900DD3860 /* Build configuration list for PBXNativeTarget "MacAndroidSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B4D1B713A751D900DD3860 /* Debug */,
+				F3B4D1B813A751D900DD3860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3B4D17813A751D900DD3860 /* Project object */;
+}
