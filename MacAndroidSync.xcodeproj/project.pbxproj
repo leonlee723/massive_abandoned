@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31C849713AC8A29003D20D6 /* ITunesLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C849613AC8A29003D20D6 /* ITunesLibrary.m */; };
+		F36B35E713A8AF510007152B /* StatusItem.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35E613A8AF510007152B /* StatusItem.png */; };
+		F36B35F313A8B2700007152B /* Advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35F113A8B2700007152B /* Advanced.png */; };
+		F36B35F413A8B2700007152B /* General.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35F213A8B2700007152B /* General.png */; };
 		F3B4D18613A751D900DD3860 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B4D18513A751D900DD3860 /* Cocoa.framework */; };
 		F3B4D19013A751D900DD3860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D18E13A751D900DD3860 /* InfoPlist.strings */; };
 		F3B4D19313A751D900DD3860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D19213A751D900DD3860 /* main.m */; };
@@ -17,6 +21,11 @@
 		F3B4D1AB13A751D900DD3860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D1A913A751D900DD3860 /* InfoPlist.strings */; };
 		F3B4D1AE13A751D900DD3860 /* MacAndroidSyncTests.h in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D1AD13A751D900DD3860 /* MacAndroidSyncTests.h */; };
 		F3B4D1B013A751D900DD3860 /* MacAndroidSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D1AF13A751D900DD3860 /* MacAndroidSyncTests.m */; };
+		F3B4D1BB13A751F200DD3860 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D1BA13A751F200DD3860 /* AppController.m */; };
+		F3B4D1C813A7549D00DD3860 /* AppPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D1C513A7549D00DD3860 /* AppPrefsWindowController.m */; };
+		F3B4D1C913A7549D00DD3860 /* DBPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D1C713A7549D00DD3860 /* DBPrefsWindowController.m */; };
+		F3B4D1D313A7567200DD3860 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D1D213A7567200DD3860 /* Preferences.xib */; };
+		F3ECF51913AC7D2400AC7A59 /* RsyncDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECF51813AC7D2400AC7A59 /* RsyncDaemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,25 +39,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F31C849513AC8A29003D20D6 /* ITunesLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesLibrary.h; sourceTree = "<group>"; };
+		F31C849613AC8A29003D20D6 /* ITunesLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesLibrary.m; sourceTree = "<group>"; };
+		F36B35E613A8AF510007152B /* StatusItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusItem.png; sourceTree = "<group>"; };
+		F36B35F113A8B2700007152B /* Advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Advanced.png; sourceTree = "<group>"; };
+		F36B35F213A8B2700007152B /* General.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = General.png; sourceTree = "<group>"; };
 		F3B4D18113A751D900DD3860 /* MacAndroidSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAndroidSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B4D18513A751D900DD3860 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F3B4D18813A751D900DD3860 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F3B4D18913A751D900DD3860 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F3B4D18A13A751D900DD3860 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F3B4D18D13A751D900DD3860 /* MacAndroidSync-Info.plist */ = {isa = PBXFileReference; path = "MacAndroidSync-Info.plist"; sourceTree = "<group>"; };
+		F3B4D18D13A751D900DD3860 /* MacAndroidSync-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacAndroidSync-Info.plist"; sourceTree = "<group>"; };
 		F3B4D18F13A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F3B4D19113A751D900DD3860 /* MacAndroidSync-Prefix.pch */ = {isa = PBXFileReference; path = "MacAndroidSync-Prefix.pch"; sourceTree = "<group>"; };
+		F3B4D19113A751D900DD3860 /* MacAndroidSync-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacAndroidSync-Prefix.pch"; sourceTree = "<group>"; };
 		F3B4D19213A751D900DD3860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3B4D19513A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		F3B4D19713A751D900DD3860 /* MacAndroidSyncAppDelegate.h */ = {isa = PBXFileReference; path = MacAndroidSyncAppDelegate.h; sourceTree = "<group>"; };
+		F3B4D19713A751D900DD3860 /* MacAndroidSyncAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacAndroidSyncAppDelegate.h; sourceTree = "<group>"; };
 		F3B4D19813A751D900DD3860 /* MacAndroidSyncAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacAndroidSyncAppDelegate.m; sourceTree = "<group>"; };
 		F3B4D19B13A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F3B4D1A213A751D900DD3860 /* MacAndroidSyncTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAndroidSyncTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3B4D1A813A751D900DD3860 /* MacAndroidSyncTests-Info.plist */ = {isa = PBXFileReference; path = "MacAndroidSyncTests-Info.plist"; sourceTree = "<group>"; };
+		F3B4D1A813A751D900DD3860 /* MacAndroidSyncTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacAndroidSyncTests-Info.plist"; sourceTree = "<group>"; };
 		F3B4D1AA13A751D900DD3860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F3B4D1AC13A751D900DD3860 /* MacAndroidSyncTests-Prefix.pch */ = {isa = PBXFileReference; path = "MacAndroidSyncTests-Prefix.pch"; sourceTree = "<group>"; };
+		F3B4D1AC13A751D900DD3860 /* MacAndroidSyncTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacAndroidSyncTests-Prefix.pch"; sourceTree = "<group>"; };
 		F3B4D1AD13A751D900DD3860 /* MacAndroidSyncTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacAndroidSyncTests.h; sourceTree = "<group>"; };
 		F3B4D1AF13A751D900DD3860 /* MacAndroidSyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacAndroidSyncTests.m; sourceTree = "<group>"; };
+		F3B4D1B913A751F200DD3860 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ../AppController.h; sourceTree = "<group>"; };
+		F3B4D1BA13A751F200DD3860 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = ../AppController.m; sourceTree = "<group>"; };
+		F3B4D1C413A7549D00DD3860 /* AppPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPrefsWindowController.h; sourceTree = "<group>"; };
+		F3B4D1C513A7549D00DD3860 /* AppPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPrefsWindowController.m; sourceTree = "<group>"; };
+		F3B4D1C613A7549D00DD3860 /* DBPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPrefsWindowController.h; sourceTree = "<group>"; };
+		F3B4D1C713A7549D00DD3860 /* DBPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPrefsWindowController.m; sourceTree = "<group>"; };
+		F3B4D1D213A7567200DD3860 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		F3ECF51713AC7D2400AC7A59 /* RsyncDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncDaemon.h; sourceTree = "<group>"; };
+		F3ECF51813AC7D2400AC7A59 /* RsyncDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncDaemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +135,23 @@
 		F3B4D18B13A751D900DD3860 /* MacAndroidSync */ = {
 			isa = PBXGroup;
 			children = (
+				F3B4D1C413A7549D00DD3860 /* AppPrefsWindowController.h */,
+				F3B4D1C513A7549D00DD3860 /* AppPrefsWindowController.m */,
+				F3B4D1C613A7549D00DD3860 /* DBPrefsWindowController.h */,
+				F3B4D1C713A7549D00DD3860 /* DBPrefsWindowController.m */,
+				F3B4D1B913A751F200DD3860 /* AppController.h */,
+				F3B4D1BA13A751F200DD3860 /* AppController.m */,
+				F3ECF51713AC7D2400AC7A59 /* RsyncDaemon.h */,
+				F3ECF51813AC7D2400AC7A59 /* RsyncDaemon.m */,
+				F31C849513AC8A29003D20D6 /* ITunesLibrary.h */,
+				F31C849613AC8A29003D20D6 /* ITunesLibrary.m */,
 				F3B4D19713A751D900DD3860 /* MacAndroidSyncAppDelegate.h */,
 				F3B4D19813A751D900DD3860 /* MacAndroidSyncAppDelegate.m */,
+				F3B4D1D213A7567200DD3860 /* Preferences.xib */,
 				F3B4D19A13A751D900DD3860 /* MainMenu.xib */,
+				F36B35E613A8AF510007152B /* StatusItem.png */,
+				F36B35F113A8B2700007152B /* Advanced.png */,
+				F36B35F213A8B2700007152B /* General.png */,
 				F3B4D18C13A751D900DD3860 /* Supporting Files */,
 			);
 			path = MacAndroidSync;
@@ -225,6 +262,10 @@
 				F3B4D19013A751D900DD3860 /* InfoPlist.strings in Resources */,
 				F3B4D19613A751D900DD3860 /* Credits.rtf in Resources */,
 				F3B4D19C13A751D900DD3860 /* MainMenu.xib in Resources */,
+				F3B4D1D313A7567200DD3860 /* Preferences.xib in Resources */,
+				F36B35E713A8AF510007152B /* StatusItem.png in Resources */,
+				F36B35F313A8B2700007152B /* Advanced.png in Resources */,
+				F36B35F413A8B2700007152B /* General.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +303,11 @@
 			files = (
 				F3B4D19313A751D900DD3860 /* main.m in Sources */,
 				F3B4D19913A751D900DD3860 /* MacAndroidSyncAppDelegate.m in Sources */,
+				F3B4D1BB13A751F200DD3860 /* AppController.m in Sources */,
+				F3B4D1C813A7549D00DD3860 /* AppPrefsWindowController.m in Sources */,
+				F3B4D1C913A7549D00DD3860 /* DBPrefsWindowController.m in Sources */,
+				F3ECF51913AC7D2400AC7A59 /* RsyncDaemon.m in Sources */,
+				F31C849713AC8A29003D20D6 /* ITunesLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +490,7 @@
 				F3B4D1B513A751D900DD3860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3B4D1B613A751D900DD3860 /* Build configuration list for PBXNativeTarget "MacAndroidSyncTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +499,7 @@
 				F3B4D1B813A751D900DD3860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
