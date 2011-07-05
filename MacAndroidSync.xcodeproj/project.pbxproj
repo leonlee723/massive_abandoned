@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F31C849713AC8A29003D20D6 /* ITunesLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C849613AC8A29003D20D6 /* ITunesLibrary.m */; };
+		F301460413B733C400E912EA /* ITunesTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = F301460313B733C400E912EA /* ITunesTrack.m */; };
+		F31C849713AC8A29003D20D6 /* ITunesLibraryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C849613AC8A29003D20D6 /* ITunesLibraryParser.m */; };
+		F3266CE713C051D300FB92DD /* BonjourDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = F3266CE613C051D300FB92DD /* BonjourDiscovery.m */; };
 		F36B35E713A8AF510007152B /* StatusItem.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35E613A8AF510007152B /* StatusItem.png */; };
 		F36B35F313A8B2700007152B /* Advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35F113A8B2700007152B /* Advanced.png */; };
 		F36B35F413A8B2700007152B /* General.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35F213A8B2700007152B /* General.png */; };
+		F395619C13BC66F100A3D00F /* RsyncModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F395619B13BC66F100A3D00F /* RsyncModule.m */; };
 		F3B4D18613A751D900DD3860 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B4D18513A751D900DD3860 /* Cocoa.framework */; };
 		F3B4D19013A751D900DD3860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D18E13A751D900DD3860 /* InfoPlist.strings */; };
 		F3B4D19313A751D900DD3860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D19213A751D900DD3860 /* main.m */; };
@@ -39,11 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F31C849513AC8A29003D20D6 /* ITunesLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesLibrary.h; sourceTree = "<group>"; };
-		F31C849613AC8A29003D20D6 /* ITunesLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesLibrary.m; sourceTree = "<group>"; };
+		F301460213B733C400E912EA /* ITunesTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesTrack.h; sourceTree = "<group>"; };
+		F301460313B733C400E912EA /* ITunesTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesTrack.m; sourceTree = "<group>"; };
+		F31C849513AC8A29003D20D6 /* ITunesLibraryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesLibraryParser.h; sourceTree = "<group>"; };
+		F31C849613AC8A29003D20D6 /* ITunesLibraryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesLibraryParser.m; sourceTree = "<group>"; };
+		F3266CE513C051D300FB92DD /* BonjourDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourDiscovery.h; sourceTree = "<group>"; };
+		F3266CE613C051D300FB92DD /* BonjourDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourDiscovery.m; sourceTree = "<group>"; };
 		F36B35E613A8AF510007152B /* StatusItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusItem.png; sourceTree = "<group>"; };
 		F36B35F113A8B2700007152B /* Advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Advanced.png; sourceTree = "<group>"; };
 		F36B35F213A8B2700007152B /* General.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = General.png; sourceTree = "<group>"; };
+		F395619A13BC66F100A3D00F /* RsyncModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncModule.h; sourceTree = "<group>"; };
+		F395619B13BC66F100A3D00F /* RsyncModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncModule.m; sourceTree = "<group>"; };
 		F3B4D18113A751D900DD3860 /* MacAndroidSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAndroidSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B4D18513A751D900DD3860 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F3B4D18813A751D900DD3860 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -139,12 +148,18 @@
 				F3B4D1C513A7549D00DD3860 /* AppPrefsWindowController.m */,
 				F3B4D1C613A7549D00DD3860 /* DBPrefsWindowController.h */,
 				F3B4D1C713A7549D00DD3860 /* DBPrefsWindowController.m */,
+				F3266CE513C051D300FB92DD /* BonjourDiscovery.h */,
+				F3266CE613C051D300FB92DD /* BonjourDiscovery.m */,
 				F3B4D1B913A751F200DD3860 /* AppController.h */,
 				F3B4D1BA13A751F200DD3860 /* AppController.m */,
 				F3ECF51713AC7D2400AC7A59 /* RsyncDaemon.h */,
 				F3ECF51813AC7D2400AC7A59 /* RsyncDaemon.m */,
-				F31C849513AC8A29003D20D6 /* ITunesLibrary.h */,
-				F31C849613AC8A29003D20D6 /* ITunesLibrary.m */,
+				F301460213B733C400E912EA /* ITunesTrack.h */,
+				F301460313B733C400E912EA /* ITunesTrack.m */,
+				F31C849513AC8A29003D20D6 /* ITunesLibraryParser.h */,
+				F31C849613AC8A29003D20D6 /* ITunesLibraryParser.m */,
+				F395619A13BC66F100A3D00F /* RsyncModule.h */,
+				F395619B13BC66F100A3D00F /* RsyncModule.m */,
 				F3B4D19713A751D900DD3860 /* MacAndroidSyncAppDelegate.h */,
 				F3B4D19813A751D900DD3860 /* MacAndroidSyncAppDelegate.m */,
 				F3B4D1D213A7567200DD3860 /* Preferences.xib */,
@@ -307,7 +322,10 @@
 				F3B4D1C813A7549D00DD3860 /* AppPrefsWindowController.m in Sources */,
 				F3B4D1C913A7549D00DD3860 /* DBPrefsWindowController.m in Sources */,
 				F3ECF51913AC7D2400AC7A59 /* RsyncDaemon.m in Sources */,
-				F31C849713AC8A29003D20D6 /* ITunesLibrary.m in Sources */,
+				F31C849713AC8A29003D20D6 /* ITunesLibraryParser.m in Sources */,
+				F301460413B733C400E912EA /* ITunesTrack.m in Sources */,
+				F395619C13BC66F100A3D00F /* RsyncModule.m in Sources */,
+				F3266CE713C051D300FB92DD /* BonjourDiscovery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,17 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "RsyncDaemon.h"
-//@class RsyncDaemon;
+#import "BonjourDiscovery.h"
 
 @interface AppController : NSObject {
 @private
     IBOutlet NSMenu *theMenu;
     NSStatusItem *statusItem;
     NSImage *itemIcon;
+    NSMutableArray *devicesMenuItems;
 
     RsyncDaemon *rsyncDaemon;
+    BonjourDiscovery *discover;
 }
 
+- (void)insertDeviceMenuItem:(NSNotification *)note;
+- (IBAction)performSync:(id)sender;
 - (IBAction)openPreferences:(id)sender;
 - (IBAction)quitApp:(id)sender;
+- (IBAction)refreshDevises:(id)sender;
+
 @end

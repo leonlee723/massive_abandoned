@@ -17,10 +17,19 @@
 {
     self = [super init];
     if (self) {
+        devicesMenuItems = [[NSMutableArray alloc] init];
+        discover = [[BonjourDiscovery alloc] init];
         rsyncDaemon = [[RsyncDaemon alloc] init];
         [rsyncDaemon generateRsyncdConf];
         [rsyncDaemon triggerRsyncDaemon];
         [rsyncDaemon getRsyncDaemonPid];
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self
+               selector:@selector(insertDeviceMenuItem:)
+                   name:LADeviceDiscoveredNotification
+                 object:nil];
+        NSLog(@"Registered with notification center");
     }
     
     return self;
@@ -28,6 +37,10 @@
 
 - (void)dealloc
 {
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver:self];
+    [discover dealloc];
+    [devicesMenuItems dealloc];
     [super dealloc];
 }
 
@@ -47,8 +60,27 @@
     [statusItem setEnabled:YES];
     [statusItem setToolTip:@"Android Mac Sync"];
     [statusItem setMenu:theMenu];
-    
-    
+}
+
+- (void)insertDeviceMenuItem:(NSNotification *)note
+{
+    NSLog(@"Received notification: %@", note);
+
+    NSString *deviceName = [NSString stringWithFormat:@"%@", [(NSNetService *)[note object] name]];
+    NSString *deviceMenuDisplay = [NSString stringWithFormat:@"Sync with %@", deviceName];
+    NSMenuItem *menuItem = [[[NSMenuItem alloc] initWithTitle:deviceMenuDisplay
+                                                      action:@selector(performSync:)
+                                                keyEquivalent:@""] autorelease];
+    [menuItem setTarget:self];
+    [devicesMenuItems addObject:menuItem];
+    [theMenu insertItem:menuItem atIndex:3];
+}
+
+- (IBAction)performSync:(id)sender;
+{
+    NSArray *menuItemTitleArray = [[(NSMenuItem *)sender title] componentsSeparatedByString:@" "];
+    NSString *deviseName = [NSString stringWithFormat:@"%@", [menuItemTitleArray lastObject]];
+    NSLog(@"perform sync with %@", deviseName);    
 }
 
 - (IBAction)openPreferences:(id)sender
@@ -62,4 +94,13 @@
     [NSApp terminate:nil];
 }
 
+- (IBAction)refreshDevises:(id)sender
+{
+    NSLog(@"refresh devises");
+    for (NSMenuItem *menuItem in devicesMenuItems) {
+        [theMenu removeItem:menuItem];
+    }
+    [devicesMenuItems removeAllObjects];
+    [discover discoverDevices];    
+}
 @end
