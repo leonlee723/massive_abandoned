@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F301460413B733C400E912EA /* ITunesTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = F301460313B733C400E912EA /* ITunesTrack.m */; };
+		F30D263A13D30A9D001510AC /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = F30D263613D30A9D001510AC /* CHANGELOG.md */; };
+		F30D263B13D30A9D001510AC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F30D263813D30A9D001510AC /* JSONKit.m */; };
+		F30D263C13D30A9D001510AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F30D263913D30A9D001510AC /* README.md */; };
+		F30D263F13D30D5F001510AC /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = F30D263E13D30D5F001510AC /* Command.m */; };
 		F31C849713AC8A29003D20D6 /* ITunesLibraryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C849613AC8A29003D20D6 /* ITunesLibraryParser.m */; };
 		F3266CE713C051D300FB92DD /* BonjourDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = F3266CE613C051D300FB92DD /* BonjourDiscovery.m */; };
 		F36B35E713A8AF510007152B /* StatusItem.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35E613A8AF510007152B /* StatusItem.png */; };
 		F36B35F313A8B2700007152B /* Advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35F113A8B2700007152B /* Advanced.png */; };
 		F36B35F413A8B2700007152B /* General.png in Resources */ = {isa = PBXBuildFile; fileRef = F36B35F213A8B2700007152B /* General.png */; };
 		F395619C13BC66F100A3D00F /* RsyncModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F395619B13BC66F100A3D00F /* RsyncModule.m */; };
+		F3A2BC7413C583470005EF18 /* Sync Items.png in Resources */ = {isa = PBXBuildFile; fileRef = F3A2BC7313C583470005EF18 /* Sync Items.png */; };
 		F3B4D18613A751D900DD3860 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B4D18513A751D900DD3860 /* Cocoa.framework */; };
 		F3B4D19013A751D900DD3860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D18E13A751D900DD3860 /* InfoPlist.strings */; };
 		F3B4D19313A751D900DD3860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D19213A751D900DD3860 /* main.m */; };
@@ -44,6 +49,12 @@
 /* Begin PBXFileReference section */
 		F301460213B733C400E912EA /* ITunesTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesTrack.h; sourceTree = "<group>"; };
 		F301460313B733C400E912EA /* ITunesTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesTrack.m; sourceTree = "<group>"; };
+		F30D263613D30A9D001510AC /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		F30D263713D30A9D001510AC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		F30D263813D30A9D001510AC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		F30D263913D30A9D001510AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		F30D263D13D30D5F001510AC /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		F30D263E13D30D5F001510AC /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		F31C849513AC8A29003D20D6 /* ITunesLibraryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesLibraryParser.h; sourceTree = "<group>"; };
 		F31C849613AC8A29003D20D6 /* ITunesLibraryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesLibraryParser.m; sourceTree = "<group>"; };
 		F3266CE513C051D300FB92DD /* BonjourDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourDiscovery.h; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 		F36B35F213A8B2700007152B /* General.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = General.png; sourceTree = "<group>"; };
 		F395619A13BC66F100A3D00F /* RsyncModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncModule.h; sourceTree = "<group>"; };
 		F395619B13BC66F100A3D00F /* RsyncModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncModule.m; sourceTree = "<group>"; };
+		F3A2BC7313C583470005EF18 /* Sync Items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sync Items.png"; sourceTree = "<group>"; };
 		F3B4D18113A751D900DD3860 /* MacAndroidSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAndroidSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B4D18513A751D900DD3860 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F3B4D18813A751D900DD3860 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -103,6 +115,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30D263513D30A57001510AC /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				F30D263613D30A9D001510AC /* CHANGELOG.md */,
+				F30D263713D30A9D001510AC /* JSONKit.h */,
+				F30D263813D30A9D001510AC /* JSONKit.m */,
+				F30D263913D30A9D001510AC /* README.md */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
 		F3B4D17613A751D900DD3860 = {
 			isa = PBXGroup;
 			children = (
@@ -144,10 +167,13 @@
 		F3B4D18B13A751D900DD3860 /* MacAndroidSync */ = {
 			isa = PBXGroup;
 			children = (
+				F30D263513D30A57001510AC /* JSONKit */,
 				F3B4D1C413A7549D00DD3860 /* AppPrefsWindowController.h */,
 				F3B4D1C513A7549D00DD3860 /* AppPrefsWindowController.m */,
 				F3B4D1C613A7549D00DD3860 /* DBPrefsWindowController.h */,
 				F3B4D1C713A7549D00DD3860 /* DBPrefsWindowController.m */,
+				F30D263D13D30D5F001510AC /* Command.h */,
+				F30D263E13D30D5F001510AC /* Command.m */,
 				F3266CE513C051D300FB92DD /* BonjourDiscovery.h */,
 				F3266CE613C051D300FB92DD /* BonjourDiscovery.m */,
 				F3B4D1B913A751F200DD3860 /* AppController.h */,
@@ -166,6 +192,7 @@
 				F3B4D19A13A751D900DD3860 /* MainMenu.xib */,
 				F36B35E613A8AF510007152B /* StatusItem.png */,
 				F36B35F113A8B2700007152B /* Advanced.png */,
+				F3A2BC7313C583470005EF18 /* Sync Items.png */,
 				F36B35F213A8B2700007152B /* General.png */,
 				F3B4D18C13A751D900DD3860 /* Supporting Files */,
 			);
@@ -281,6 +308,9 @@
 				F36B35E713A8AF510007152B /* StatusItem.png in Resources */,
 				F36B35F313A8B2700007152B /* Advanced.png in Resources */,
 				F36B35F413A8B2700007152B /* General.png in Resources */,
+				F3A2BC7413C583470005EF18 /* Sync Items.png in Resources */,
+				F30D263A13D30A9D001510AC /* CHANGELOG.md in Resources */,
+				F30D263C13D30A9D001510AC /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +356,8 @@
 				F301460413B733C400E912EA /* ITunesTrack.m in Sources */,
 				F395619C13BC66F100A3D00F /* RsyncModule.m in Sources */,
 				F3266CE713C051D300FB92DD /* BonjourDiscovery.m in Sources */,
+				F30D263B13D30A9D001510AC /* JSONKit.m in Sources */,
+				F30D263F13D30D5F001510AC /* Command.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +457,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacAndroidSync/MacAndroidSync-Prefix.pch";
 				INFOPLIST_FILE = "MacAndroidSync/MacAndroidSync-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,6 +473,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacAndroidSync/MacAndroidSync-Prefix.pch";
 				INFOPLIST_FILE = "MacAndroidSync/MacAndroidSync-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

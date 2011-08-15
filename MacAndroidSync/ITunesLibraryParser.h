@@ -15,12 +15,22 @@
     NSDictionary *plist;
     NSDictionary* tracks;
     NSArray *playLists;
-    NSArray *artists;
+    NSMutableArray *artists;
+    NSMutableArray *artistsPaths;
 }
 
 @property(copy) NSString *libraryPath;
 @property(retain) NSDictionary *plist;
 @property(retain) NSArray *playLists;
-@property(retain) NSDictionary* tracks;
+@property(retain) NSDictionary *tracks;
+@property(retain) NSMutableArray *artists;
+@property(retain) NSMutableArray *artistsPaths;
+
++ (NSString *)iTunesPath;
++ (BOOL)isInstalled;
++ (NSArray *)findiTunesLibraries;
+
+- (void)getArtistsList;
+//- (NSArray *)artists;
 
 @end

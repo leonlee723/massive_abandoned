@@ -14,6 +14,8 @@
 @synthesize plist;
 @synthesize playLists;
 @synthesize tracks;
+@synthesize artists;
+@synthesize artistsPaths;
 
 + (NSString *)iTunesPath
 {
@@ -43,6 +45,9 @@
             
 			ITunesLibraryParser *parser = [[[self class] alloc] init];
 			parser.libraryPath = libraryPath;
+            parser.plist = [NSDictionary dictionaryWithContentsOfFile:libraryPath];
+            parser.playLists = [[parser plist] objectForKey:@"Playlists"];
+            parser.tracks = [[parser plist] objectForKey:@"Tracks"];
 			[parserInstances addObject:parser];
 			[parser release];
 		}
@@ -59,9 +64,8 @@
 {
     self = [super init];
     if (self) {
-        plist = [NSDictionary dictionaryWithContentsOfFile:libraryPath];
-        playLists = [plist objectForKey:@"Playlists"];
-        tracks = [plist objectForKey:@"Tracks"];
+        artists = [[NSMutableArray alloc] init];
+        artistsPaths = [[NSMutableArray alloc] init];
     }
     
     return self;
@@ -69,6 +73,7 @@
 
 - (void)dealloc
 {
+    [artists release];
     [super dealloc];
 }
 
@@ -78,20 +83,39 @@
     return [url path];
 }
 
-- (NSArray *)artists
+- (void)getArtistsList
 {
-    NSMutableArray *artistsArray = [NSMutableArray array];
-    for (NSDictionary *track in tracks) {
-        NSString *artistName = [track objectForKey:@"Artist"];
+//    NSMutableArray *artistsArray = [NSMutableArray array];
+//    for (NSDictionary *track in tracks) {
+//        NSString *artistName = [track objectForKey:@"Artist"];
+//        // artist alrealy in the array
+//        if ([artistsArray containsObject:artistName]) {
+//            continue;
+//        }
+//        
+//        // new artist
+//        [artistsArray addObject:artistName];
+//    }
+//    return artistsArray;
+    [artists removeAllObjects];
+    for (NSString *key in [tracks allKeys]) {
+        NSDictionary *track = [tracks objectForKey:key];
+        NSString *artistName = [track objectForKey:@"Artist"];        
         // artist alrealy in the array
-        if ([artistsArray containsObject:artistName]) {
+        if ([artists containsObject:artistName] || artistName == nil) {
             continue;
-        }
-        
-        // new artist
-        [artistsArray addObject:artistName];
+        }        
+        // is new artist
+        [artists addObject:artistName];
+        NSString *artistPath = [[libraryPath stringByDeletingLastPathComponent] stringByAppendingFormat:@"/%@", artistName];
+        NSLog(@"The Path is: %@", artistPath);
+        [artistsPaths addObject:artistPath];
     }
-    return artistsArray;
 }
+
+//- (NSArray *)artists
+//{
+//    return artists;
+//}
 
 @end
