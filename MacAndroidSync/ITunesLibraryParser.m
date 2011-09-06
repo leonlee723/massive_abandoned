@@ -97,6 +97,7 @@
 //        [artistsArray addObject:artistName];
 //    }
 //    return artistsArray;
+    NSLog(@"libraryPath is %@", libraryPath);
     [artists removeAllObjects];
     for (NSString *key in [tracks allKeys]) {
         NSDictionary *track = [tracks objectForKey:key];
@@ -107,8 +108,8 @@
         }        
         // is new artist
         [artists addObject:artistName];
-        NSString *artistPath = [[libraryPath stringByDeletingLastPathComponent] stringByAppendingFormat:@"/%@", artistName];
-        NSLog(@"The Path is: %@", artistPath);
+//        NSString *artistPath = [[libraryPath stringByDeletingLastPathComponent] stringByAppendingFormat:@"/iTunes Music/%@", artistName];
+        NSString *artistPath = [NSString stringWithFormat:@"Music/iTunes/iTunes Music/%@", artistName];
         [artistsPaths addObject:artistPath];
     }
 }

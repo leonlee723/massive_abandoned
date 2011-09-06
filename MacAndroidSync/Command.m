@@ -18,7 +18,7 @@
     return [self initWithName:@"default" value:@"OK"];
 }
 
-- (id)initWithName:(NSString *)aName value:(NSString *)aValue
+- (id)initWithName:(NSString *)aName value:(id)aValue
 {
     self = [super init];
     if (self) {

@@ -16,9 +16,9 @@
 }
 
 @property(copy) NSString *name;
-@property(copy) NSString *value;
+@property(copy) id value;
 
-- (id)initWithName:(NSString *)aName value:(NSString *)aValue;
+- (id)initWithName:(NSString *)aName value:(id)aValue;
 - (NSDictionary *)commandDict;
 
 @end

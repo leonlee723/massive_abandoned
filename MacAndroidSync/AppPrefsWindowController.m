@@ -17,13 +17,10 @@ NSString * const LACachedDevices = @"CachedDevices";
 
 - (void)setupToolbar
 {
+    [self addView:generalPreferenceView label:@"General"];
     [self addView:syncItemsdPreferenceView label:@"Sync Items"];
-	[self addView:generalPreferenceView label:@"General"];
 	[self addView:advancedPreferenceView label:@"Advanced"];
-	
-    // Optional configuration settings.
-	[self setCrossFade:[[NSUserDefaults standardUserDefaults] boolForKey:@"fade"]];
-	[self setShiftSlowsAnimation:[[NSUserDefaults standardUserDefaults] boolForKey:@"shiftSlowsAnimation"]];
+
     
     iTunesLibraryParsers = [ITunesLibraryParser findiTunesLibraries];
     for (ITunesLibraryParser *paser in iTunesLibraryParsers) {
@@ -36,7 +33,7 @@ NSString * const LACachedDevices = @"CachedDevices";
     artistsSelection = [[NSMutableArray alloc] init];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSArray *syncPaths = [defaults objectForKey:LASyncPaths];
+    NSArray *syncPaths = [[defaults objectForKey:LASyncPaths] autorelease];
     for (int i = 0; i < [artists count]; i++) {
         if ([syncPaths containsObject:[artists objectAtIndex:i]]) {
             [artistsSelection addObject:[NSNumber numberWithBool:YES]];

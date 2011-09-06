@@ -15,6 +15,7 @@
 #import "RsyncDaemon.h"
 #import "JSONKit.h"
 #import "Command.h"
+#import "MASDropzoneView.h"
     
 
 @implementation AppController
@@ -88,6 +89,10 @@
     [statusItem setEnabled:YES];
     [statusItem setToolTip:@"Android Mac Sync"];
     [statusItem setMenu:theMenu];
+    
+    // set custom view 
+    MASDropzoneView *statusItemView = [[[MASDropzoneView alloc] init] retain];
+    [statusItem setView: statusItemView];  
     
     [self checkDeviceAliveWhenAwake];
 }
@@ -166,13 +171,18 @@
 //    }
     NSDictionary *deviceSocketInfo = [(NSMenuItem *)sender representedObject];
     
-    Command *aCommand = [[[Command alloc] initWithName:@"CheckAlive" value:@"None"] autorelease];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *syncPaths = [[defaults objectForKey:LASyncPaths] autorelease];
+    
+    Command *aCommand = [[[Command alloc] initWithName:@"sync" value:syncPaths] autorelease];
     [self sendToAndroidWithoutNetService:deviceSocketInfo withCommand:aCommand];
 }
 
 - (IBAction)openPreferences:(id)sender
 {
+    NSLog(@"open prefs");
     [[AppPrefsWindowController sharedPrefsWindowController] showWindow:nil];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 - (IBAction)quitApp:(id)sender
